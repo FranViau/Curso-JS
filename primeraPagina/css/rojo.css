@@ -1,0 +1,17 @@
+:root{
+    --rojo: #CA3413;
+    }
+body{
+    background: url(../img/rojo.jpg);
+    background-attachment: fixed;
+    padding-top: 20px;
+}
+#logo{
+    background-color: var(--rojo);
+}
+#barra ul li:hover{
+    background-color: var(--rojo);
+}
+.boton-mas{
+    background-color: var(--rojo);
+}

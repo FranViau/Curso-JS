@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con JS</title>
+
+    
+    <!-- jQuery UI-->
+    <link rel="stylesheet" href="js/jQueryUI-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jQueryUI-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jQueryUI-1.12.1/jquery-ui.theme.min.css">
+    <!-- Selector de temas -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id= "tema" rel="stylesheet" type="text/css" href="css/verde.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <!-- jQuery UI -->
+    <script type="text/javascript" src="js/jQueryUI-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <div id="cambiarTema">
+        <div id="aVerde"></div>
+        <div id="aRojo"></div>
+        <div id="aAzul"></div>
+    </div>
+    <section id="global">
+        <!-- HEADER -->
+        <header>
+            <div id="logo">
+                <h1>Proyecto JS</h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav id = "barra">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre mí</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- CONTENIDO -->
+        <section id="content">
+            <div id="box">
+                <!-- Insertar Acordeón -->
+                <h2>Sobre mí</h2>
+                <div id="acordeon">
+                    <h3>¿Quienes Somos?</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula orci.
+                            Nulla nec congue justo, a imperdiet ipsum.</p>
+                    </div>
+                    <h3>Nuestros servicios</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula orci.
+                            Nulla nec congue justo, a imperdiet ipsum.</p>
+                    </div>
+                    <h3>Nuestros clientes</h3>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula orci.
+                            Nulla nec congue justo, a imperdiet ipsum.</p>
+                    </div>
+                </div>
+            </div>
+            <aside id = "sidebar">
+                <div id="about">
+                    <h4><span>¿Quien soy?</span></h4>
+                    <img src="img/caracol.jpg" alt="Imagen caracol">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ligula orci.
+                        Nulla nec congue justo, a imperdiet ipsum.</p>
+                </div>
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form action="">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="formName">
+
+                        <label for="mail">Correo</label>
+                        <input type="email" name="mail">
+
+                        <label for="password">Nombre</label>
+                        <input type="password" name="password" >
+
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+        
+    </section>
+    <footer>
+        Master en JavaScript &copy
+
+        <a href=""class="subir">Ir arriba</a>
+    </footer>
+
+
+
+    
+</body>
+</html>

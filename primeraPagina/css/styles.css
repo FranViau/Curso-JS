@@ -1,0 +1,229 @@
+*{
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+}
+.clearfix{
+    clear: both;
+    float: none;
+
+}
+img{
+    width: 100%;
+}
+:root{
+    --verde: #235E3D;
+    }
+
+#global{
+    width: 65%;
+    margin: 0 auto;
+    background-color: white !important;
+    padding: 25px;
+    box-shadow: 0px 0px 2px gray;
+}
+#logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    float: left;
+    margin-bottom: 20px;
+    line-height: 75px;
+    text-transform: uppercase;
+}
+#barra{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#barra ul{
+    line-height: 46px;
+    list-style: none;
+}
+#barra ul li{
+    height: 46px;
+    display: inline-block;
+    transition: all .3s;
+
+}
+
+#barra a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+#posts{
+    width: 60%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.post{
+    padding: 7px;
+}
+h2{
+    font-size: 30px;
+    color: #333;
+}
+.post p{
+    margin: 15px 0px 20px 0px;
+    line-height: 23px;
+    text-align: justify;
+}
+.post .fecha{
+    display: block;
+    color: gray;
+    margin-top: 5px;
+
+}
+.boton-mas{
+    text-align: center;
+    width: 20%;
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+#sidebar{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    float: right;
+}
+#sidebar h4{
+    margin: 50px 0px 20px 0px;
+    text-align: center;
+    color:#333;
+    background: url(../img/lines.png) repeat-x;
+}
+#sidebar h4 span{
+    background-color: white;
+    padding: 5px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+select{
+    padding: 5px;
+    border-radius: 2px; 
+    border: 1px solid #CCC;
+    width: 80%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 2px gray;
+    margin-top: 5px;
+}
+form input[type="submit"]{
+    background-color: #EEE;
+    padding: 10px;
+    border: 1px solid #CCC;
+    color: #333;
+    cursor: pointer;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 47px;
+    background-color: rgba(51,51,51,0.7);
+    margin: 30px auto 0px auto;
+    width: 65%;
+    padding: 10px 20px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.bx-wrapper, .bx-viewport{
+    height: 250px !important;
+}
+
+/* SELECTOR DE TEMAS */
+#cambiarTema{
+    position: fixed;
+    top: 40%;
+    background-color: rgba(51,51,51,0.7);
+    width: 50px;
+    height: 100px;
+}
+#aVerde, #aAzul, #aRojo{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin:  5px auto;
+    cursor: pointer;
+}
+#aVerde{
+    background-color: var(--verde);
+}
+#aRojo{
+    background-color: #CA3413;
+}
+#aAzul{
+    background-color: #1F87C4;
+}
+.subir{
+    color: white;
+    display: block;
+    float: right;
+    text-decoration: none;
+}
+
+
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+#acordeon{
+    margin-top: 20px;
+}
+#reloj{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    border: 5px dashed #333;
+    width: 30%;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+#loading{
+    
+}
+#formContacto{
+    width: 50%;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#formContacto label{
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+}
+#formContacto input[type="submit"]{
+    display: block;
+    margin-bottom: 10px;
+}
+.help-block, form-error{
+    color: red;
+    font-size: 16px;
+}

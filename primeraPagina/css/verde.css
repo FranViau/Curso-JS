@@ -1,0 +1,17 @@
+:root{
+    --verde: #235E3D;
+    }
+body{
+    background: url(../img/hojas.jpg);
+    background-attachment: fixed;
+    padding-top: 20px;
+}
+#logo{
+    background-color: var(--verde);
+}
+#barra ul li:hover{
+    background-color: var(--verde);
+}
+.boton-mas{
+    background-color: var(--verde);
+}

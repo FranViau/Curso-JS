@@ -1,0 +1,53 @@
+Para instalar angular9 hay que tener la version mas nueva de Node.js. 
+Para tener los paquetes mas nuevos de npm hay que hacer:
+npm install -g npm@latest
+npm cache clean --force
+npm set audit false
+Si no estas seguro de tener la ultima version de angular, hay que escribir:
+npm uninstall -g angular-cli
+npm uninstall -g @angular/cli
+Para borrar el cache:
+npm cache clean --force
+Ahora, para instalar el ultimo paquete, hay que hacer el siguiente comando:
+npm install -g @angular/cli@latest
+Luego hay que ir a la carpeta del proyecto y correr el comando para crear una carpeta (con el nombre my-app, por ejemplo):
+ng new my-app
+Despues hacer
+cd my-app 
+Y iniciar angular:
+ng serve
+APRENDIENDO ANGULAR
+El tslint.json es el codigo que indenta al TypeScript
+El package.json tiene las configuraciones y dependencias del proyecto
+En angular.json se pueden añadir nuevos assets o stylesheets o scripts que querramos
+En la carpeta node_modules es donde estan todos los archivos del framework
+LOS PROYECTOS ANGULAR ESTAN COMPUESTOS POR:
+    -Componentes: Conjunto de elementos que controlan una vista de la pantalla
+    -Plantillas: Definen la vista de los componentes. Son HTMLs con sintaxis especial de angular
+    -Decoradores: Son patrones de diseño que se usan para configurar dinamicamente atributos / metadatos de las clases y los componentes
+    -Metadatos: Describen a las clases y relaciones entre componentes y plantillas
+    -Servicios: Son clases con un objetivo claro, el cual facilita la reutilizacion del codigo, son un tipo de elemento en la estructura de Angular
+    -Providers: Son servicios que nos proveen datos o funcionalidades mediante sus metodos. Existen providers propios de Angular o desarrolados por nosotros
+    -Directivas: Son funcionalidades aplicadas al DOM y a los elementos del HTML en las plantillas de un componente
+
+PARA CREAR UN COMPONENTE ANGULAR SE PUEDE:
+    -Se puede usar la consola para crearlo
+    -Definir una carpeta de components y ahi crearlos todos
+    -Tener una carpeta de components donde tengamos las clases del componente
+    - Crear una carpeta por componente en la carpeta app (Lo que vamos a hacer nosostros)
+
+Scaffolding: Generar codigo de manera automatica
+Para crear un componente, hay que escribir en una terminal, en la carpeta del proyecto, esto:
+ng generate component nombrecomponente
+
+HOOKS: Los hooks son eventos que se van a lanzar dependiendo de estado del componente
+El mas conocido es el OnInit, es el que se ejecuta cuando se cargue un componente, se ejecuta luego del constructor
+Otro es el DoCheck, se usa cada vez que hay un cambio en la aplicacion de angular o en el componente
+El OnDestroy es para cuando un componente se destruye
+
+PIPES / FILTROS: Funcionalidad que podemmos usar en nuestra vista para hacer funciones o tareas en nuestra vista,
+se pueden tener pipes para formatear texto de mayuscula a minuscula, en la documentacion de angular hay muchos 
+ejemplos de pipes
+
+IMPORTANTE
+No hice cambios en ninguna parte fuera de la carpeta src. Dentro de esta, solo hice cambios en la carpeta app y el archivo styles.css
