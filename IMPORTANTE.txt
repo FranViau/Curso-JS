@@ -1,0 +1,4 @@
+En este curso de 31,5 horas vi muchos temas. En el curso sockets es un chat de cliente servidor con socket.io y node.js.
+La carpeta de back-end es la base de datos con node.js y mongoDB utilizada para el backend del proyectoAngular.
+En el drive guarde la mayoria de las carpetas, excluyendo la de node_modules ya que es muy pesada y se puede instalar
+automaticamente con comandos npm.

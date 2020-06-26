@@ -1,0 +1,68 @@
+Mongo DB Es un sistema gestor de base de datos NoSQL lider en el mercado actualmente
+DIFERENCIA BASE DE DATOS SQL VS NoSQL
+SQL: 
+Son bases de datos relacionales ya que tenemos un conjunto de capsulas de info que se relacionan mediante indices y en cada tabla de 
+la bdd se guarda la indo de manera separada y se relaciona. Se relacionan mediante IDs o claves. La info se guarda en una tabla
+ordenada y con un sistema claro. Tambien hay esquemas.
+NoSQL:
+No se utiliza lenguaje SQL ya que se utiliza JavaScript para hacer todo. Son no relacionales ya que no tiene porque existir ningun
+tipo de relacion entre una coleccion y otra, aunque se puede simular ese funcionamiento. No hay tablas, hay colecciones de documentos,
+los documentos son objetos JSON pero que dentro de MongoDB se conocen como objetos BSON (Binary JSON) ya que es más rapido a la hora 
+de hacer operaciones con los datos. Almacenar datos en documentos BSON hace que la velocidad de consulta sea más rapida. Tiene esquema
+libre, por lo que en un documento se puede tener "nombre" y "apellido" como campos y en otro documento solo "nombre".
+
+Una vez descargado MongoDB, hay que crear en el disco C:/ una carpeta llamada data, y dentro de ella una llamada db. En este lugar
+se van a almacenar las bases de datos y configuraciones de MongoDB. Luego, en el disco C:/Archivos del Programa/MongoDB/Server/3.2/bin
+estan los ejecutables. El ejecutable mongod.exe tiene que estar en segundo plano siempre para poder trabajar con mongo. Para ejecutar
+consultas tenemos el mongo.exe, tambien podemos crear bases de datos
+
+API Rest:
+Una API Rest es un servicio de un programa que esta en el back-end que nos permite recibir peticiones http e interactuar con una 
+base de datos y devolver un resultado en formato JSON
+
+NodeJS:
+Es una herramienta que nos permite usar JavaScript del lado del servidor.
+Para correr un archivo en la consola con node, hay que escribir:
+node nombreDelArchivo.js
+Para crear un proyecto de NodeJS hay que lanzar el comando npm init en la carpeta del proyecto, esto iniciara el proyecto y crear el
+fichero package.json, donde ira la configuracion del proyecto con las dependencias que se instalan en el proyecto, etc.
+Una vez que lo creamos le tenemos que dar el nombre, la descripcion, el entry point (index.js por ejemplo), el autor (Franco Viau)
+y la licencia, que podes poner MIT. Esto creara un package.json. Ahora hay que agregarle dependencias, por ejemplo Express.
+Express es un framework para trabajar con el protocolo http, nos permite tener un sistema de rutas, recibiendo peticiones http.
+Entonces:
+npm install express --save
+La opcion --save es guardar esa dependencia en el proyecto actual. Tambien vamos a instalar el body parser, convierte peticiones
+que hago al back-end a un objeto JSON usable por JS. Entonces:
+npm install body-parser --save
+Otra cosa es el connect multiparty, el cual permite subir archivos al back-end, esto es importante si queremos subir imagenes.
+npm install connect-multiparty --save
+Tambien la dependencia Mongoose, la cual hace mas facil trabajar con MongoDB, permite crear mi modelo, mis entidades y permite
+trabajar con MongoDB con metodos que ya vienen hechos y son faciles de utilizar, entonces:
+npm install mongoose --save
+Por ultimo, instalar nodemon, que nos permite utilizar el servidor de NodeJS y que cada vez que cambies el codigo se refrezque y se 
+vuelva a iniciar el servidor
+npm install nodemon --save-dev 
+El -dev significa que es una dependencia que solo se va a utilizar en desarrollo local, cuando lo subamos a un servidor, esta 
+dependencia no tiene que tomarse en cuenta.
+
+En package.json, en scripts hay que agregar "start": "nodemon index.js", de esta forma, cada vez que lanzes npm start se va a cargar
+el nodemon cargando el archivo index.js
+
+MODELO VISTA CONTROLADOR (MVC)
+
+El modelo es el que se encarga de comunicarse con la base de datos. 
+
+El controlador es el intermediario entre la vista y el modelo. Se encarga de controlar las interacciones del usuario en la vista,
+pide los datos al modelo y los devuelve de nuevo a la vista para que esta los muestre al usuario. 
+
+La vista es la encargada de mostrar la información al usuario, con de forma gráfica y legible, al estar trabajando con una API Rest,
+estas vistas son JSON.
+
+El funcionamiento básico del patrón MVC, puede resumirse en:
+
+El usuario realiza una petición.
+El controlador captura la petición.
+Hace la llamada al modelo correspondiente.
+El modelo sera el encargado de interactuar con la base de datos.
+El controlador recibe la información y la enviá a la vista.
+La vista muestra la información.
